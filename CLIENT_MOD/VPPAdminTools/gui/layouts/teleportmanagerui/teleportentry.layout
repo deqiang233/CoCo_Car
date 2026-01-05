@@ -1,0 +1,83 @@
+PanelWidgetClass PanelData {
+ ignorepointer 1
+ keepsafezone 1
+ color 1 1 1 0.549
+ position 0 0
+ size 1 0.1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ style editor_quad_dark
+ {
+  PanelWidgetClass PnlBg {
+   ignorepointer 1
+   color 0 0 0 1
+   size 0.997 0.907
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+  }
+  GridSpacerWidgetClass content {
+   ignorepointer 0
+   color 0 0 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanelBottom
+   Padding 4
+   Margin 6
+   "Size To Content H" 1
+   "Size To Content V" 1
+   Columns 2
+   Rows 1
+   {
+    CheckBoxWidgetClass CheckBox {
+     clipchildren 0
+     ignorepointer 0
+     position 0 -0.24944
+     size 0.25 0.40112
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Default
+     text "Chernogorsk"
+     font "gui/fonts/sdf_MetronLight16"
+    }
+    TextWidgetClass CoordsInput {
+     clipchildren 1
+     ignorepointer 1
+     position 0 0.21353
+     size 0.75 0.56334
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "7500,300,7500"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 0
+     "exact text size" 10
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,317 @@
+FrameWidgetClass diagFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 102
+ scriptclass "VPPDialogBox"
+ {
+  PanelWidgetClass BorderOutline {
+   ignorepointer 1
+   color 1 1 1 0.549
+   position 0 0
+   size 0.5 0.3
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 1023
+   style editor_quad_dark
+   {
+    PanelWidgetClass PanelMain {
+     visible 1
+     inheritalpha 0
+     ignorepointer 1
+     color 0 0 0 1
+     size 0.99 0.97
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     scriptclass ""
+     style editor_quad_dark
+     {
+      PanelWidgetClass TitleImage {
+       ignorepointer 1
+       color 0 0 0 1
+       size 0.993 0.143
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style DayZDefaultPanel
+       {
+        TextWidgetClass TitleText {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 1
+         style None
+         text "#VSTR_DIALOG_TITLE"
+         font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+         "italic text" 0
+         "bold text" 1
+         "text sharpness" 3
+         "exact text" 1
+         "exact text size" 14
+         "size to text h" 1
+         "size to text v" 1
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      MultilineTextWidgetClass ContentText {
+       clipchildren 0
+       ignorepointer 1
+       position 0 -0.1
+       size 0.8 0.5
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       scriptclass ""
+       style DayZNormal
+       text "#VSTR_DIALOG_CONTENT"
+       font "vppadmintools/gui/fonts/InterDisplay-Light"
+       "exact text" 1
+       "exact text size" 14
+       "size to text h" 1
+       "size to text v" 1
+       "text halign" center
+       wrap 1
+      }
+      GridSpacerWidgetClass ButtonsGrid {
+       visible 1
+       ignorepointer 1
+       keepsafezone 0
+       position 0 0.02
+       size 1 0.178
+       halign center_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       Padding 10
+       Margin 0
+       "Size To Content H" 1
+       "Size To Content V" 1
+       content_halign center
+       content_valign center
+       Rows 1
+       {
+        ButtonWidgetClass ButtonYES {
+         visible 0
+         size 0.25 0.7
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scriptclass ""
+         style Editor
+         font "gui/fonts/MetronLight"
+         {
+          TextWidgetClass txtbuttonyes {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Normal
+           text "#VSTR_YES"
+           font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+           "exact text" 1
+           "exact text size" 14
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        ButtonWidgetClass ButtonNO {
+         visible 0
+         size 0.25 0.7
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Editor
+         font "gui/fonts/MetronLight"
+         {
+          TextWidgetClass txtbuttonno {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Normal
+           text "#VSTR_NO"
+           font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+           "exact text" 1
+           "exact text size" 14
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        ButtonWidgetClass ButtonPaste {
+         visible 0
+         disabled 0
+         size 0.25 0.7
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Editor
+         font "gui/fonts/MetronLight"
+         {
+          TextWidgetClass txtbuttonPaste {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Normal
+           text "#VSTR_PASTE"
+           font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+           "exact text" 1
+           "exact text size" 14
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        ButtonWidgetClass ButtonOK {
+         visible 0
+         disabled 0
+         size 0.25 0.7
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Editor
+         font "gui/fonts/MetronLight"
+         {
+          TextWidgetClass txtbuttonOK {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Normal
+           text "#VSTR_OK"
+           font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+           "exact text" 1
+           "exact text size" 14
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        ButtonWidgetClass ButtonCANCEL {
+         visible 0
+         disabled 0
+         color 0.7804 0.1725 0.1725 1
+         size 0.25 0.7
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Editor
+         font "gui/fonts/MetronLight"
+         {
+          TextWidgetClass txtbuttoncancel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Normal
+           text "#VSTR_CANCEL"
+           font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+           "exact text" 1
+           "exact text size" 14
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PanelSplitter {
+       ignorepointer 1
+       position 0 0.14
+       size 0.993 0.018
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style EditorPanel
+      }
+      EditBoxWidgetClass InputBox {
+       visible 0
+       position 0 0.27
+       size 0.9 0.147
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scriptclass "EditBoxEventHandler"
+       style Editor
+       text "#VSTR_ENTER_VALUE"
+       "limit visible" 0
+       "Use default text" 1
+       "exact text" 1
+       font "gui/fonts/MetronLight28"
+      }
+     }
+    }
+   }
+  }
+ }
+}

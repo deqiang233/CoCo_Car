@@ -1,0 +1,19 @@
+GridSpacerWidgetClass rootFrameEsp {
+ visible 1
+ ignorepointer 1
+ color 0 0 0 0.7843
+ position 0 0
+ size 337 28
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style Colorable
+ Padding 0
+ Margin 0
+ "Size To Content H" 1
+ "Size To Content V" 1
+ content_valign center
+ Columns 1
+ Rows 100
+}

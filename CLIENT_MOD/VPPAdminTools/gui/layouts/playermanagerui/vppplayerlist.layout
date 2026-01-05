@@ -1,0 +1,65 @@
+PanelWidgetClass PanelPlayer {
+ visible 1
+ ignorepointer 1
+ keepsafezone 1
+ color 1 1 1 0.549
+ position 0 0
+ size 1 0.09
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style editor_quad_dark
+ {
+  PanelWidgetClass PnlBg {
+   ignorepointer 1
+   color 0 0 0 1
+   position 0 0
+   size 0.994 0.895
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+  }
+  GridSpacerWidgetClass player_content {
+   ignorepointer 0
+   color 0 0 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanelBottom
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 1
+   {
+    CheckBoxWidgetClass CheckBox {
+     ignorepointer 0
+     position 0 11.3617
+     size 1.02949 0.64416
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "DaOne"
+     font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+     "text outline size" 1
+     "text outline color" 0 0 0 0.9961
+     "text shadow color" 0 0 0 0
+     checked 0
+    }
+   }
+  }
+ }
+}

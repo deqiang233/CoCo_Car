@@ -1,0 +1,96 @@
+GridSpacerWidgetClass rootFrameEsp {
+ visible 1
+ clipchildren 0
+ ignorepointer 0
+ position 2.4576 1.7792
+ size 0.30168 0.06618
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ Padding 0
+ Margin 0
+ "Size To Content H" 1
+ "Size To Content V" 1
+ Columns 1
+ Rows 1
+ {
+  GridSpacerWidgetClass SpacerGrid {
+   visible 1
+   clipchildren 0
+   ignorepointer 0
+   color 0 0 0 0.7059
+   position 0 0
+   size 0.72047 0.97718
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style Colorable
+   Padding 5
+   Margin 0
+   "Size To Content H" 1
+   "Size To Content V" 1
+   content_halign center
+   Rows 1
+   {
+    CheckBoxWidgetClass CheckBox {
+     visible 1
+     inheritalpha 0
+     ignorepointer 0
+     color 1 0 0 0.3922
+     position 0 0
+     size 0.06165 -1.81287
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     scaled 1
+    }
+    TextWidgetClass ItemName {
+     ignorepointer 1
+     color 1 1 1 0.7843
+     position 0 0
+     size 1.01193 0.26152
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     scaled 1
+     style Normal
+     text "M4A1M4A1M4A1M4A1M4A1"
+     font "vppadmintools/gui/fonts/InterDisplay-Medium"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass ItemDistance {
+     ignorepointer 1
+     color 0 1 0.0824 0.7843
+     position 38.2064 -0.728
+     size 0.83077 0.25497
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style Bold
+     text "[1250m]"
+     font "vppadmintools/gui/fonts/InterDisplay-Medium"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

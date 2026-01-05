@@ -1,0 +1,54 @@
+# DayZ Development Tool .gitignore
+
+# 构建文件
+build/
+bin/
+*.exe
+*.dll
+*.pdb
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# VS Code配置
+.vscode/
+*.code-workspace
+
+# Git文件
+.git/
+.gitignore
+
+# DayZ相关
+*.pbo
+*.bisign
+*.bikey
+
+# 日志文件
+logs/
+*.rpt
+
+# 备份文件
+*~
+*.bak
+*.orig
+
+# 系统文件
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# 开发工具文件
+killAll.ps1
+run.ps1
+modinit.ps1
+
+# 配置文件（如果不想上传）
+# config.json
+
+# 数据文件（如果不想上传）
+# data/
+
+# 只保留src目录的内容
+# 其他所有文件和目录都会被忽略，除非明确添加到git中

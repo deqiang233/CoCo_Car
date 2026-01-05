@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="CoCoCarOpenMenu" loc="Open CoCo_Car menu" />
+        </actions>
+    </inputs>
+
+    <preset>
+        <input name="CoCoCarOpenMenu">
+            <btn name="kSEMICOLON">
+            </btn>
+        </input>
+    </preset>
+</modded_inputs>

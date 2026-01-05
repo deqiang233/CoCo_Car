@@ -1,0 +1,104 @@
+PanelWidgetClass PanelFilter {
+ ignorepointer 1
+ keepsafezone 1
+ color 1 1 1 0.549
+ position 0 0
+ size 1 0.17
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style editor_quad_dark
+ {
+  PanelWidgetClass FilterBg {
+   ignorepointer 1
+   color 0 0 0 1
+   size 0.996 0.925
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+  }
+  GridSpacerWidgetClass filter_content {
+   ignorepointer 0
+   color 0 0 0 0
+   size 0.37 0.8
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanelBottom
+   Padding 0
+   Margin 1
+   "Size To Content H" 1
+   "Size To Content V" 1
+   Columns 4
+   Rows 1
+   {
+    CheckBoxWidgetClass CheckBox {
+     ignorepointer 0
+     position 0 -0.28992
+     size 1.5082 0.48586
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Default
+     text "FilterName"
+     font "gui/fonts/sdf_MetronLight16"
+    }
+    XComboBoxWidgetClass ColorCombo {
+     position 0 -19.1287
+     size 0.85 -0.00098
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style debugUI
+     font "gui/fonts/sdf_MetronLight16"
+     items "#VSTR_COLOR_WHITE;#VSTR_COLOR_GREEN;#VSTR_COLOR_BLUE;#VSTR_COLOR_YELLOW;#VSTR_COLOR_ORANGE;#VSTR_COLOR_RED;#VSTR_COLOR_PURPLE;#VSTR_COLOR_BLACK"
+    }
+    ButtonWidgetClass btnDeleteFilter {
+     color 1 0 0 1
+     position 0.56 0
+     size 0.25 0.25
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     scriptclass ""
+     style Empty
+     {
+      ImageWidgetClass iconDel {
+       ignorepointer 1
+       position 0.05706 0
+       size 0.43582 0.75
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       image0 "set:dayz_gui_vpp image:vpp_icon_trash"
+       mode additive
+       "src alpha" 1
+       "clamp mode" clamp
+       "stretch mode" stretch_w_h
+      }
+     }
+    }
+   }
+  }
+ }
+}

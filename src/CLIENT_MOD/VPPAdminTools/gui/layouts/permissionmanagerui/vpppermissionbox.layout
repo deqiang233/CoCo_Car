@@ -1,0 +1,61 @@
+PanelWidgetClass PanelPerm {
+ ignorepointer 1
+ keepsafezone 1
+ color 1 1 1 0.549
+ size 1 0.07
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style editor_quad_dark
+ {
+  PanelWidgetClass PnlBg {
+   ignorepointer 1
+   color 0 0 0 1
+   size 0.996 0.925
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+  }
+  GridSpacerWidgetClass widget_content {
+   visible 1
+   ignorepointer 0
+   color 0 0 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanelBottom
+   Padding 4
+   Margin 6
+   "Size To Content V" 1
+   Columns 1
+   Rows 1
+   {
+    CheckBoxWidgetClass CheckBox {
+     ignorepointer 0
+     position 0 11.4772
+     size 1 0.51046
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     scaled 1
+     style Default
+     text "PermissionName"
+     font "gui/fonts/sdf_MetronLight16"
+    }
+   }
+  }
+ }
+}

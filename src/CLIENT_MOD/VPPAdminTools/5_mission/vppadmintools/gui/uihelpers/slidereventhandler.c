@@ -1,0 +1,114 @@
+class SliderEventHandler extends ScriptedWidgetEventHandler
+{
+	protected TextWidget 	   m_DisplayText;
+	protected SliderWidget     m_root;
+	protected float            m_step = 1.0; //How much to -- or ++ when scrolling
+
+	void OnWidgetScriptInit(Widget w)
+	{
+		m_root = SliderWidget.Cast(w);
+		m_root.SetHandler(this);
+		m_DisplayText = TextWidget.Cast(m_root.GetChildren());
+		
+		GetGame().GetCallQueue(CALL_CATEGORY_GUI).CallLater(this.Update, 100, true);
+	}
+	
+	void ~SliderEventHandler()
+	{
+	}
+
+	void SetDisplayText(string text)
+	{
+		m_DisplayText.SetText(text);
+	}
+
+	void ChangeColor(int argb)
+	{
+		m_DisplayText.SetColor(argb);
+	}
+
+	void Update()
+	{
+		string sliderName = m_root.GetName();
+		sliderName.Replace("Slider","");
+		string localizedLabel = GetLocalizedSliderLabel(sliderName);
+		m_DisplayText.SetText(string.Format("%1:[%2]",localizedLabel,m_root.GetCurrent().ToString()));
+	}
+	
+	string GetLocalizedSliderLabel(string sliderName)
+	{
+		string labelKey = "";
+		switch (sliderName)
+		{
+			case "Health":
+				labelKey = "#VSTR_SLIDER_HEALTH";
+				break;
+			case "Blood":
+				labelKey = "#VSTR_SLIDER_BLOOD";
+				break;
+			case "Shock":
+				labelKey = "#VSTR_SLIDER_SHOCK";
+				break;
+			case "Water":
+				labelKey = "#VSTR_SLIDER_WATER";
+				break;
+			case "Energy":
+				labelKey = "#VSTR_SLIDER_ENERGY";
+				break;
+			case "Rain":
+				labelKey = "#VSTR_WEATHER_RAIN";
+				break;
+			case "Overcast":
+				labelKey = "#VSTR_WEATHER_OVERCAST";
+				break;
+			case "Fog":
+				labelKey = "#VSTR_WEATHER_FOG";
+				break;
+			case "WindForce":
+				labelKey = "#VSTR_WEATHER_WINDFORCE";
+				break;
+			default:
+				return sliderName; // Fallback to English if no localization
+		}
+		return labelKey;
+	}
+	
+	override bool OnChange(Widget w, int x, int y, bool finished)
+	{
+		string sliderName = m_root.GetName();
+		sliderName.Replace("Slider","");
+		string localizedLabel = GetLocalizedSliderLabel(sliderName);
+		m_DisplayText.SetText(string.Format("%1:[%2]",localizedLabel,m_root.GetCurrent().ToString()));
+		return true;
+	}
+
+	override bool OnMouseWheel(Widget w, int x, int y, int wheel)
+	{
+		float newValue;
+		string sliderName = m_root.GetName();
+		sliderName.Replace("Slider","");
+		if (wheel <= -1){
+			newValue = m_root.GetCurrent() - m_step;
+			m_root.SetCurrent(newValue);
+		}else{
+			newValue = m_root.GetCurrent() + m_step;
+			m_root.SetCurrent(newValue);
+		}
+		string localizedLabel = GetLocalizedSliderLabel(sliderName);
+		m_DisplayText.SetText(string.Format("%1:[%2]",localizedLabel,m_root.GetCurrent().ToString()));
+		return true;
+	}
+
+	void SetStep(float step)
+	{
+		m_step = step;
+	}
+
+	float GetStep()
+	{
+		return m_step;
+	}
+};
+/*
+Make sure the slider you assign to this script class starts with Slider as its names in layouts eg: SliderHealth
+*/

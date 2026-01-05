@@ -1,0 +1,166 @@
+FrameWidgetClass rootFrame {
+ size 0.9 0.9
+ halign center_ref
+ valign bottom_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass mainPnl {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+   {
+    PanelWidgetClass PnlBg {
+     ignorepointer 1
+     color 0 0 0 1
+     position 0 0.1
+     size 0.995 0.895
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style editor_quad_dark
+    }
+    PanelWidgetClass titleBG {
+     ignorepointer 1
+     color 0 0 0 1
+     position 0.002 0.002
+     size 0.995 0.11
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style DayZDefaultPanel
+    }
+    TextWidgetClass text_title {
+     ignorepointer 1
+     position 0.01 0
+     size 0.9 0.12
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Bold
+     text "#VSTR_LBL_UPDATE_GROUP_ATTS"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular22"
+     "exact text" 1
+     text_proportion 0.6
+     "size to text h" 0
+     "text valign" center
+    }
+    PanelWidgetClass panel_redline {
+     ignorepointer 1
+     position 0 0.12
+     size 0.995 0.007
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style DayZDefaultPanel
+    }
+    PanelWidgetClass panel_buttons {
+     ignorepointer 0
+     position 0 0.01
+     size 0.98 0.12
+     halign center_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      ButtonWidgetClass button_cancel {
+       position 0 0.1
+       size 0.35 0.8
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "#VSTR_CANCEL"
+       text_proportion 0.6
+       font "vppadmintools/gui/fonts/InterDisplay-Medium"
+      }
+      ButtonWidgetClass button_save {
+       position 0 0.1
+       size 0.35 0.8
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       style Editor
+       text "#VSTR_LBL_SAVE"
+       text_proportion 0.6
+       font "vppadmintools/gui/fonts/InterDisplay-Medium"
+      }
+     }
+    }
+    GridSpacerWidgetClass panel_content {
+     ignorepointer 0
+     size 0.9 0.5
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 0
+     "Size To Content H" 1
+     "Size To Content V" 1
+     content_valign center
+     Columns 1
+     Rows 2
+     {
+      CheckBoxWidgetClass chkForceAdminName {
+       position 0 0.03058
+       size 0.1 0.08883
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Default
+       text "#VSTR_ENABLED"
+       font "gui/fonts/sdf_MetronLight16"
+      }
+      MultilineTextWidgetClass info {
+       clipchildren 0
+       ignorepointer 1
+       size 0.8 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#VSTR_LBL_GROUP_NAME_FORCE"
+       font "vppadmintools/gui/fonts/InterDisplay-Regular"
+       "exact text" 1
+       "exact text size" 14
+       "size to text h" 1
+       "size to text v" 1
+       wrap 1
+       "condense whitespace" 1
+       "strip newlines" 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

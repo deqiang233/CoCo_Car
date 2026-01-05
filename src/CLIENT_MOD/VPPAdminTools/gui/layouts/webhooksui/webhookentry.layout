@@ -1,0 +1,137 @@
+PanelWidgetClass PanelEntry {
+ ignorepointer 1
+ keepsafezone 1
+ color 1 1 1 0.549
+ position 0 0
+ size 0.99 0.07
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style editor_quad_dark
+ {
+  PanelWidgetClass PanelWidget0 {
+   ignorepointer 1
+   color 0 0 0 1
+   size 0.996 0.895
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style editor_quad_dark
+  }
+  GridSpacerWidgetClass entry_content {
+   ignorepointer 0
+   color 0 0 0 0
+   size 1 0
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanelBottom
+   Padding 4
+   Margin 6
+   "Size To Content V" 1
+   Columns 1
+   Rows 5
+   {
+    FrameWidgetClass ItemFrame {
+     ignorepointer 0
+     position 0 0
+     size 48 23
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass ItemName {
+       ignorepointer 1
+       position 0 0
+       size 0.79 1
+       halign right_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "WebHookName"
+       font "vppadmintools/gui/fonts/InterDisplay-Regular"
+       "exact text" 0
+       "exact text size" 14
+       "text valign" center
+      }
+      ButtonWidgetClass btnDeleteItem {
+       color 1 0 0 1
+       position 0 0
+       size 0.065 0.7
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scriptclass "ConfirmationEventHandler"
+       "no focus" 1
+       {
+        ImageWidgetClass iconDel {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui_vpp image:vpp_icon_trash"
+         mode additive
+         "src alpha" 1
+         "clamp mode" clamp
+         "stretch mode" stretch_w_h
+        }
+       }
+      }
+      ButtonWidgetClass btnEditItem {
+       visible 1
+       color 1 0 0 1
+       position 0.097 0
+       size 0.075 0.9
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scriptclass "ConfirmationEventHandler"
+       "no focus" 1
+       {
+        ImageWidgetClass iconEdit {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         image0 "set:dayz_gui image:icon_feedback"
+         mode additive
+         "src alpha" 1
+         "clamp mode" clamp
+         "stretch mode" stretch_w_h
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

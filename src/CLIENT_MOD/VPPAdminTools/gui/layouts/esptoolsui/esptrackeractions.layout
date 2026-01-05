@@ -1,0 +1,290 @@
+GridSpacerWidgetClass SpacerGrid {
+ visible 1
+ ignorepointer 1
+ color 0 0 0 0
+ position 0 0
+ size 0.5 0
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ style Colorable
+ Padding 5
+ Margin 1
+ "Size To Content H" 1
+ "Size To Content V" 1
+ content_valign center
+ Columns 2
+ Rows 11
+ {
+  TextWidgetClass Pos {
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Bold
+   text "#VSTR_LBL_POSITION"
+   font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+   "exact text" 1
+   "exact text size" 14
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass PosCopy {
+   position 0 0
+   size 77 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos0 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_COPY"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblSelect {
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Bold
+   text "#VSTR_LBL_SELECT_IN_PM"
+   font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+   "exact text" 1
+   "exact text size" 14
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  CheckBoxWidgetClass ChkSelectPlayer {
+   position 0 0
+   size 50 24
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 1
+  }
+  TextWidgetClass LblTpTo {
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Bold
+   text "#VSTR_LBL_TELEPORT"
+   font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+   "exact text" 1
+   "exact text size" 14
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpToMe {
+   position 0 0
+   size 64 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos1 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_TP_TO_ME"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblTpMe {
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Bold
+   text "#VSTR_LBL_TELEPORT"
+   font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+   "exact text" 1
+   "exact text size" 14
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpMeTo {
+   position 0 0
+   size 64 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos2 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_TP_TO"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblTpBack {
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Bold
+   text "#VSTR_LBL_TELEPORT"
+   font "vppadmintools/gui/fonts/InterDisplay-SemiBold"
+   "exact text" 1
+   "exact text size" 14
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpReturn {
+   position 0 0
+   size 64 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos3 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_RETURN"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass BtnKill {
+   color 0.949 0.0392 0.0392 1
+   position 0 0
+   size 64 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos5 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_KILL"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass BtnHeal {
+   position 0 0
+   size 64 18
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Editor
+   font "vppadmintools/gui/fonts/InterDisplay-Regular14"
+   text_proportion 0.6
+   {
+    TextWidgetClass Pos4 {
+     size 0 13
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#VSTR_BTN_HEAL"
+     font "vppadmintools/gui/fonts/InterDisplay-Regular"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+ }
+}
